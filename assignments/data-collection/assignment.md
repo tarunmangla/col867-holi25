@@ -86,7 +86,7 @@ While you will not perform any ML modeling in this assignment, you will conduct 
 - Application Classification: Analyze how well the extracted network traffic features can distinguish between the three application types (web browsing, ChatGPT, video streaming). You can use visualization techniques (e.g., PCA, t-SNE) to explore feature separability.
 - QoE Correlation: For each application, analyze how the network traffic features correlate with the application-level QoE metrics (e.g., page load time for web browsing, response time for ChatGPT, buffer occupancy for video streaming). Use statistical analysis and visualization techniques to identify significant correlations.
 
-Report your findings in a concise manner, highlighting key insights from the correlation analysis in a report (`report.pdf`). The report should highlight whether you observe any clear patterns and a very brief explanation of why you think those patterns exist. It is okay if you do not find any clear patterns; just report your observations. 
+Report your findings in a concise manner in a report (`report.pdf`). The report should highlight whether you observe any clear patterns and a very brief explanation of why you think those patterns exist. It is okay if you do not find any clear patterns; just report your observations. 
 
 ---
 
@@ -118,7 +118,7 @@ The id should be a combination of timestamp (when the experiment was run), the a
 
 ### Code Submission
 
-Submit all scripts used for data collection and analysis in a folder named `code/`. We should be able to run your data collection scripts in the demo.
+Submit all scripts used for data collection and analysis in a folder named `code/`. We should be able to run your data collection scripts during the demo.
 
 ---
 
