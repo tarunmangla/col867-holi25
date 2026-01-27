@@ -1,6 +1,6 @@
 # Assignment 1: Data Collection using Active Measuremetns
 
-**Goal:** Understand  *data collection aspects of networking using active measurements*, with a focus on **application classification and application QoE monitoring**. You will generate traffic, collect packet-level traces (pcap), and measure application-level QoE metrics under **controlled and diverse network conditions**.
+**Goal:** Understand  *data collection aspects of networking using active measurements*, with a focus on **application classification and application Quality of Experience (QoE) monitoring**. You will generate traffic, collect packet-level traces (pcap), and measure application-level QoE metrics under **controlled and diverse network conditions**.
 
 ---
 
@@ -41,7 +41,7 @@ Experiment Steps:
 * Collect: Page load time (PLT), pcap traces, HAR logs
 
 _Varying network conditions using `tc` (bandwidth, latency)_: Vary the network bandwidth at 1-second
-intervals by picking a random bandwidth between 100 kbps and 4 Mbps and a random latency between 20 ms and 200 ms.
+intervals by picking a random bandwidth between 100 kbps and 4 Mbps and a random latency between 20 ms and 200 ms. A shaping script is provided to help you get started (`shaper.sh`). Make sure you understand the script and modify it as needed. 
 
 You should collect data for at least **50 experiments**.
 
@@ -50,7 +50,7 @@ You should collect data for at least **50 experiments**.
 ### Part 2: ChatGPT interaction
 Experiment Steps:
 * Start emulating network conditions using `tc`.
-* Using browser automation tool, automate sending random textual queries to ChatGPT.
+* Using browser automation tool, open ChatGPT and enter random textual prompt.
 * Collect: Response time for each query, pcap traces, HAR logs
 
 _Varying network conditions using `tc` (bandwidth, latency)_: Vary the network bandwidth using similar approach as Part 1.
@@ -86,7 +86,7 @@ While you will not perform any ML modeling in this assignment, you will conduct 
 - Application Classification: Analyze how well the extracted network traffic features can distinguish between the three application types (web browsing, ChatGPT, video streaming). You can use visualization techniques (e.g., PCA, t-SNE) to explore feature separability.
 - QoE Correlation: For each application, analyze how the network traffic features correlate with the application-level QoE metrics (e.g., page load time for web browsing, response time for ChatGPT, buffer occupancy for video streaming). Use statistical analysis and visualization techniques to identify significant correlations.
 
-Report your findings in a concise manner, highlighting key insights from the correlation analysis in a report (`report.pdf`).
+Report your findings in a concise manner, highlighting key insights from the correlation analysis in a report (`report.pdf`). The report should highlight whether you observe any clear patterns and a very brief explanation of why you think those patterns exist. It is okay if you do not find any clear patterns; just report your observations. 
 
 ---
 
